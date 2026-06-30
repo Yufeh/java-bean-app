@@ -181,7 +181,6 @@ Maven supports packaging and releasing Java applications in standard formats (JA
 Maven integrates seamlessly with Gitlab for automated builds in CI/CD pipelines. GitLab can be configured to execute Maven goals (e.g., clean, install, deploy) on code pushes, providing quick feedback to developers and ensuring project integrity.
 
 *Example GitLab Pipeline*:
-
 ```
 image: maven:3.9-eclipse-temurin-17
 
