@@ -29,15 +29,13 @@ under the License.
   <servers>
     <server>
       <id>nexusdeploymentrepo</id>
-      <username>admin</username>  <!-- Provide Your Nexus Repository Server Username and Password -->
-      <password>admin1234</password>
+      <username>admin</username>  <password>admin1234</password>
     </server>
 
   </servers>
   <mirrors>
   </mirrors>
   <profiles>
-    <!--Apache Tomcat Deployment Server Environment Profile Start-->
     <profile>
       <id>env-dev</id>
 
@@ -52,9 +50,7 @@ under the License.
         <tomcatPath>/path/to/tomcat/instance</tomcatPath>
       </properties>
     </profile>
-  <!--Apache Tomcat Deployment Server Environment Profile End-->
-	<!--Nexus Repository Manager's Profile Start-->
-	<profile>
+  <profile>
      <id>snapshot</id>
      <repositories>
        <repository>
@@ -62,7 +58,7 @@ under the License.
          <name>hsbc-payment</name>
          <url>http://35.173.200.177:8081/repository/hsbc-payment-gateway-snapshots-repo/</url>
        </repository>
-	   
+   
      </repositories>
    </profile>
     <profile>
@@ -75,8 +71,6 @@ under the License.
        </repository>
      </repositories>
    </profile>
-   <!--Nexus Repository Manager's Profile End-->
-   <!--SonarQube/Sonar Profile-->
    <profile>
       <id>sonar</id>
       <activation>
@@ -86,6 +80,5 @@ under the License.
         <sonar.host.url>http://100.54.216.3:9000</sonar.host.url>
       </properties>
     </profile>
-    <!--End SonarQube/Sonar Profile-->
-  </profiles>
+    </profiles>
 </settings>
