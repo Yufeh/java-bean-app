@@ -56,11 +56,11 @@
   <distributionManagement>
     <snapshotRepository>
       <id>nexusdeploymentrepo</id>
-      <url>http://44.201.26.248:8081/repository/hsbc-payment-gateway-snapshots-repo/</url>
+      <url>http://35.173.200.177:8081/repository/hsbc-payment-gateway-snapshots-repo/</url>
     </snapshotRepository>
     <repository>
       <id>nexusdeploymentrepo</id>
-      <url>http://44.201.26.248:8081/repository/hsbc-payment-gateway-releases-repo/</url>
+      <url>http://35.173.200.177:8081/repository/hsbc-payment-gateway-releases-repo/</url>
     </repository>
   </distributionManagement>
 
@@ -105,7 +105,7 @@
               </execution>
             </executions>
             <configuration>
-              <nexusUrl>http://44.201.26.248:8081</nexusUrl>
+              <nexusUrl>http://35.173.200.177:8081</nexusUrl>
               <serverId>nexus</serverId>
               <!-- choose the target hosted repository name in Nexus3 -->
               <repository>hsbc-payment-gateway-realeases</repository>
